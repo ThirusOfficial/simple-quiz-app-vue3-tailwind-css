@@ -32,6 +32,7 @@
                                 class="hidden"
                                 :value="key"
                                 @change="answered($event)"
+                                v-model="selectedAnswer"
                                 :disabled="selectedAnswer != ''"
                             />
                             {{ answer }}
